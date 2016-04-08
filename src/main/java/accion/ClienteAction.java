@@ -17,6 +17,10 @@ public class ClienteAction extends ActionSupport implements ModelDriven<Cliente>
 
     private Cliente cliente = new Cliente();
 
+    public void validateDame(){
+        System.out.println("validacion de dame...");
+    }
+    
     public String dame() {       
         cliente.setId(13132132);
         return SUCCESS;
