@@ -8,13 +8,18 @@
     </head>
     <body>
         <h1>EJEMPLO :D!</h1>
-        
-        
-        
+
+
+        field error<br>
+        <s:fielderror/>
+        action error <br>
+        <s:actionerror/>
+        action message <br>
+        <s:actionmessage/>
         <s:form namespace="/cliente" action="dame">
-            <input type="text" name="nombre" placeholder="ingrese el nombre">
-            <input type="text" name="apellido" placeholder="ingrese el apellido">
-            <input type="text" name="id" placeholder="ingrese el id">
+            <input type="text" name="cliente.nombre" placeholder="ingrese el nombre">
+            <input type="text" name="cliente.apellido" placeholder="ingrese el apellido">
+            <input type="text" name="cliente.id" placeholder="ingrese el id">
             <s:submit value="enviar"/>
         </s:form>
     </body>
